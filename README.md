@@ -2,6 +2,10 @@
 
 Prototype Ethereum DApp that records npm package name, version, SHA-256 hash, and source on a local blockchain so a later download can be checked against that record.
 
+**GitHub (full source):** https://github.com/sunnieho0323/npm-blockchain-project
+
+**OnTrack code slot:** upload `submission/PackageRegistry.txt` (Solidity source as `.txt`; OnTrack does not accept `.zip` / `.sol`).
+
 ## Requirements
 
 - Node.js 18+

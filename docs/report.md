@@ -3,6 +3,9 @@
 Subtitle: A prototype using Express and React (Ganache, MetaMask, Solidity, React, ethers.js)
 
 > SIT728 10.2HD. Paste screenshots under the Figure markers in section 12 (eight figures).
+>
+> Full DApp source (contract, React frontend, tests, docs): https://github.com/sunnieho0323/npm-blockchain-project  
+> OnTrack code evidence file: `submission/PackageRegistry.txt`
 
 ---
 
