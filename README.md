@@ -73,7 +73,3 @@ This downloads the current npm tarballs, computes SHA-256, and writes a tampered
 ## Security
 
 See [docs/security-testing.md](docs/security-testing.md). Contract tests: `npx hardhat test`. Slither: 0 findings after `owner` was made `immutable`.
-
-## Report draft
-
-See [docs/report.md](docs/report.md). Add your own screenshots in section 12.
