@@ -1,0 +1,16 @@
+node_modules/
+artifacts/
+cache/
+coverage/
+coverage.json
+.venv/
+.venv-slither/
+.env
+.DS_Store
+frontend/node_modules/
+frontend/dist/
+package-data/**/*.tgz
+package-data/**/*-tampered.tgz
+*.tgz
+express-*.tgz
+react-*.tgz

@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+:root {
+  --paper: #f3ecdf;
+  --ink: #1b1712;
+  --muted: #5c5348;
+  --rule: #cbbba3;
+  --navy: #1e2a3a;
+  --stamp: #1f6b4a;
+  --warn: #9a4a12;
+  --fail: #8b2430;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background: radial-gradient(circle at top left, #fff8ec 0, var(--paper) 42%, #e6dccb 100%);
+  color: var(--ink);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Source Serif 4", serif;
+  margin: 0 0 0.4rem;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  background: var(--navy);
+  color: #f7f1e6;
+  border: 0;
+  padding: 0.55rem 0.9rem;
+  cursor: pointer;
+}
+
+button.ghost {
+  background: transparent;
+  color: var(--navy);
+  border: 1px solid var(--rule);
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.topbar {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.kicker {
+  margin: 0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.wallet-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.wallet-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.wallet-meta dt {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.wallet-meta dd {
+  margin: 0.15rem 0 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.9rem;
+}
+
+.connect-box {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.9rem 1rem;
+  border: 2px solid var(--navy);
+  background: #fffdf8;
+  max-width: 36rem;
+}
+
+.connect-box button {
+  justify-self: start;
+}
+
+.banner,
+.note {
+  color: var(--muted);
+}
+
+.warn,
+.fail {
+  color: var(--fail);
+}
+
+.ok {
+  color: var(--stamp);
+}
+
+.tabs {
+  display: flex;
+  gap: 0;
+  margin: 1.25rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.tab {
+  background: transparent;
+  color: var(--muted);
+  border: 0;
+  border-bottom: 3px solid transparent;
+  padding: 0.7rem 1rem;
+}
+
+.tab.active {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+.hero .tagline {
+  font-family: "Source Serif 4", serif;
+  font-size: 1.35rem;
+  margin: 0.2rem 0 0.8rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.25rem 0;
+}
+
+.stat-grid article,
+.panel,
+.record-card,
+.stamp {
+  background: rgba(255, 252, 246, 0.8);
+  border: 1px solid var(--rule);
+  padding: 1rem;
+}
+
+.stat {
+  font-family: "Source Serif 4", serif;
+  font-size: 2rem;
+  margin: 0.3rem 0 0;
+}
+
+.stat.network {
+  font-size: 1.15rem;
+}
+
+.stack {
+  display: grid;
+  gap: 0.85rem;
+  max-width: 560px;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+input {
+  padding: 0.6rem 0.7rem;
+  border: 1px solid var(--rule);
+  background: #fffdf8;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.row.wrap {
+  flex-wrap: wrap;
+}
+
+.demo-row {
+  margin: 0.75rem 0 1rem;
+}
+
+.guide {
+  max-width: 40rem;
+}
+
+.guide h3 {
+  margin-top: 1.25rem;
+}
+
+.guide ol {
+  padding-left: 1.2rem;
+}
+
+.guide li {
+  margin: 0.4rem 0;
+}
+
+code {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.88em;
+}
+
+.history {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.record-card dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 1rem;
+  margin: 0.6rem 0 0;
+}
+
+.record-card .wide {
+  grid-column: 1 / -1;
+}
+
+.record-card dt {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.record-card dd {
+  margin: 0.15rem 0 0;
+}
+
+.mono {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.82rem;
+  word-break: break-all;
+}
+
+.stamp strong {
+  display: block;
+  font-family: "Source Serif 4", serif;
+  font-size: 1.2rem;
+}
+
+.stamp.ok {
+  border-color: var(--stamp);
+  color: var(--stamp);
+}
+
+.stamp.fail,
+.stamp.error {
+  border-color: var(--warn);
+  color: var(--warn);
+}
+
+.stamp p {
+  margin: 0.35rem 0 0;
+  color: var(--ink);
+}
+
+@media (max-width: 720px) {
+  .wallet-meta,
+  .stat-grid,
+  .record-card dl {
+    grid-template-columns: 1fr;
+  }
+}

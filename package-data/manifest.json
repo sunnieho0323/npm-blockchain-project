@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-09-21T04:13:42.449Z",
+  "hashAlgorithm": "SHA-256",
+  "packages": [
+    {
+      "name": "express",
+      "version": "5.2.1",
+      "source": "npm",
+      "originalFile": "express-5.2.1.tgz",
+      "originalHash": "1773a16c02b4422653479b9c4d211268f7022bdac0d817b5698535bb485dd005",
+      "tamperedFile": "express-5.2.1-tampered.tgz",
+      "tamperedHash": "ae895af34c1d38908bdda5e5562afddff95a6e47e0703dd3889188d8c00e28bb"
+    },
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "source": "npm",
+      "originalFile": "react-19.3.0.tgz",
+      "originalHash": "5a4024110c49476e1538a70fd65b9e59d038fcc280b78eb933c24e10453afbf9",
+      "tamperedFile": "react-19.3.0-tampered.tgz",
+      "tamperedHash": "ed5350eeccd8a136bb1ff00518c5dc99e0c5b931d0e2823c974ee90ec20065d1"
+    }
+  ]
+}

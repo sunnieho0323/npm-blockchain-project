@@ -1,0 +1,18 @@
+{
+  "name": "npm-provenance-dapp",
+  "version": "1.0.0",
+  "description": "Blockchain-based NPM package provenance and integrity verification",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "prepare:data": "node scripts/prepare-package-data.js",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:ganache": "hardhat run scripts/deploy.js --network ganache"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.29.1"
+  }
+}
